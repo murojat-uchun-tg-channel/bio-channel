@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murojat uchun & TG Channel</title>
+    <!-- Ikonkalar uchun FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Zamonaviy shrift -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #161822;
+            padding: 20px;
+        }
+
+        /* Asosiy karta konteyneri */
+        .profile-card {
+            position: relative;
+            width: 100%;
+            max-width: 390px;
+            border-radius: 26px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            /* Qanotli ritsar rasmi orqa fon sifatida */
+            background: url('bg.jpg') center/cover no-repeat;
+        }
+
+        /* Orqa fonni biroz xiralashtirish va yozuvlar o'qilishi uchun qoraytirish */
+        .card-overlay {
+            background: rgba(15, 16, 22, 0.55);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            padding: 45px 25px 38px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Yumaloq avatar ramkasi */
+        .avatar-box {
+            width: 112px;
+            height: 112px;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0.1));
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+            margin-bottom: 18px;
+        }
+
+        .avatar-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Asosiy sarlavha */
+        .name {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            color: #cbd5e1;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        /* Tugmalar ro'yxati */
+        .links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 14px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        .link-btn i {
+            font-size: 20px;
+            width: 28px;
+            text-align: center;
+            margin-right: 12px;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
+        }
+
+        /* 1-tugma: Elita Sinifi Telegram Channel */
+        .btn-tg-channel {
+            background: linear-gradient(90deg, #0099e5, #00b4ff);
+        }
+
+        /* 2-tugma: Woidness Telegram Profil */
+        .btn-tg-profile {
+            background: linear-gradient(90deg, #3b82f6, #6366f1);
+        }
+
+        /* 3-tugma: Izana.icc Instagram Profil */
+        .btn-instagram {
+            background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="card-overlay">
+            
+            <!-- Yumaloq rasm (Tojli ritsar) -->
+            <div class="avatar-box">
+                <img src="avatar.jpg" alt="Avatar">
+            </div>
+
+            <!-- Asosiy sarlavha -->
+            <h1 class="name">Murojat uchun & TG Channel</h1>
+            <p class="subtitle">PERSONAL BIO & LINKS</p>
+
+            <!-- Linklar -->
+            <div class="links-container">
+                
+                <!-- 1. Telegram Kanal -->
+                <a href="https://t.me/elitasinifi" target="_blank" class="link-btn btn-tg-channel">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Elita Sinifi (Telegram Kanal)</span>
+                </a>
+
+                <!-- 2. Telegram Profil -->
+                <a href="https://t.me/Woidness" target="_blank" class="link-btn btn-tg-profile">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Woidness (Telegram Profil)</span>
+                </a>
+
+                <!-- 3. Instagram Profil -->
+                <a href="https://www.instagram.com/izana.icc?lqvp=MWdudzFraWo4eDd1MQ==" target="_blank" class="link-btn btn-instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>izana.icc (Instagram Profil)</span>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
